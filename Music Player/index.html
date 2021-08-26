@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="body-header">
+      <nav>
+        <div class="header-logo-left">
+          <img src="Assets/Music-art.png" alt="" />
+        </div>
+        <div class="header-text"><h3>Favourites</h3></div>
+        <div class="search-box">
+          <div class="search">
+            <i class="fas fa-search"></i>
+            <input type="text" class="input-search" placeholder="Search" />
+            <i class="fas fa-microphone"></i>
+          </div>
+        </div>
+        <div class="bell-icon">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="header-logo-right">
+          <img src="Assets/Music-Button.png" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="left">
+        <section id="slider">
+          <div class="slider-image-container">
+            <div class="slider-image">
+              <img src="Assets/lukas.jpg" alt="" />
+            </div>
+            <div class="slider-image">
+              <img src="Assets/star.jpg" alt="" />
+            </div>
+            <div class="slider-image">
+              <img src="Assets/sam.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section id="latest-release">
+          <h3 class="lr-heading">Latest Release</h3>
+          <div class="lr-songs-container">
+            <div class="lr-songs">
+              <div class="lr-songs-image">
+                <img src="Assets/obafemi-moyosade.jpg" alt="" />
+              </div>
+              <div class="lr-songs-name">
+                <h4>Onism</h4>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="lr-songs-time">
+                <i class="fas fa-ellipsis-h lr-s-t-icon"></i>
+                <p>4:44</p>
+              </div>
+            </div>
+            <div class="lr-songs">
+              <div class="lr-songs-image">
+                <img src="Assets/obafemi-moyosade.jpg" alt="" />
+              </div>
+              <div class="lr-songs-name">
+                <h4>Onism</h4>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="lr-songs-time">
+                <i class="fas fa-ellipsis-h lr-s-t-icon"></i>
+                <p>4:44</p>
+              </div>
+            </div>
+          </div>
+          <div class="lr-songs-container">
+            <div class="lr-songs">
+              <div class="lr-songs-image">
+                <img src="Assets/obafemi-moyosade.jpg" alt="" />
+              </div>
+              <div class="lr-songs-name">
+                <h4>Onism</h4>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="lr-songs-time">
+                <i class="fas fa-ellipsis-h lr-s-t-icon"></i>
+                <p>4:44</p>
+              </div>
+            </div>
+            <div class="lr-songs">
+              <div class="lr-songs-image">
+                <img src="Assets/obafemi-moyosade.jpg" alt="" />
+              </div>
+              <div class="lr-songs-name">
+                <h4>Onism</h4>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="lr-songs-time">
+                <i class="fas fa-ellipsis-h lr-s-t-icon"></i>
+                <p>4:44</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="popular-artist">
+          <h3 class="pa-heading">Popular Artist</h3>
+          <div class="artists-container">
+            <div class="artists">
+              <img src="Assets/ED-Sheeran.jpg" alt="" />
+            </div>
+            <div class="artists">
+              <a href="artist.html"><img src="Assets/coldplay.jpg" alt="" /></a>
+            </div>
+            <div class="artists">
+              <img src="Assets/enrique.jpg" alt="" />
+            </div>
+            <div class="artists">
+              <img src="Assets/chris-brown.jpg" alt="" />
+            </div>
+            <div class="artists">
+              <img src="Assets/Zayn-Malik.jpg" alt="" />
+            </div>
+            <div class="artists">
+              <img src="Assets/drake.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section id="stations">
+          <div class="station-logo">
+            <img src="Assets/Stations.png" alt="" />
+          </div>
+          <div class="station">
+            <img src="Assets/love.jpg" alt="" />
+            <div class="station-name">Love</div>
+          </div>
+          <div class="station">
+            <img src="Assets/Retro.jpg" alt="" />
+            <div class="station-name">Retro</div>
+          </div>
+          <div class="station">
+            <img src="Assets/chill.jpg" alt="" />
+            <div class="station-name">Chill</div>
+          </div>
+          <div class="station">
+            <img src="Assets/workout.jpg" alt="" />
+            <div class="station-name">Workout</div>
+          </div>
+          <div class="station">
+            <img src="Assets/rock.jpg" alt="" />
+            <div class="station-name">Rock</div>
+          </div>
+          <div class="station">
+            <img src="Assets/pop.jpg" alt="" />
+            <div class="station-name">Pop</div>
+          </div>
+        </section>
+
+        <section id="song-type">
+          <div class="st-image-container">
+            <div class="st-image">
+              <img src="Assets/Party-st.jpg" alt="" />
+              <div class="st-name">Party</div>
+            </div>
+            <div class="st-image">
+              <img src="Assets/Electronic.jpg" alt="" />
+              <div class="st-name">Electronic</div>
+            </div>
+            <div class="st-image">
+              <img src="Assets/Road-trip.jpg" alt="" />
+              <div class="st-name">Road Trip</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="latest-english">
+          <h3 class="le-heading">Latest English</h3>
+          <div class="le-songs-container">
+            <div class="le-songs">
+              <div class="le-songs-image">
+                <img src="Assets/olia.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="le-songs">
+              <div class="le-songs-image">
+                <img src="Assets/olia.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="le-songs">
+              <div class="le-songs-image">
+                <img src="Assets/olia.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="le-songs">
+              <div class="le-songs-image">
+                <img src="Assets/olia.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="le-songs">
+              <div class="le-songs-image">
+                <img src="Assets/olia.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="le-songs">
+              <div class="le-songs-image">
+                <img src="Assets/olia.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="latest-hindi">
+          <h3 class="lh-heading">Latest Hindi</h3>
+          <div class="lh-songs-container">
+            <div class="lh-songs">
+              <div class="lh-songs-image">
+                <img src="Assets/tanale.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="lh-songs">
+              <div class="lh-songs-image">
+                <img src="Assets/tanale.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="lh-songs">
+              <div class="lh-songs-image">
+                <img src="Assets/tanale.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="lh-songs">
+              <div class="lh-songs-image">
+                <img src="Assets/tanale.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="lh-songs">
+              <div class="lh-songs-image">
+                <img src="Assets/tanale.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+            <div class="lh-songs">
+              <div class="lh-songs-image">
+                <img src="Assets/tanale.jpg" alt="" />
+              </div>
+              <h4 class="m0">Onism</h4>
+              <p class="m0">AUG 11, 2017</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside id="queue">
+        <div class="q-header">
+          <div class="q-heading">
+            <h2>Queue</h2>
+          </div>
+          <div class="q-lists">
+            <form action="">
+              <select name="queue-list" id="queue-list">
+                <option>Playlists</option>
+                <option>Favourite Songs</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="q-songs-list">
+          <div class="q-song">
+            <div class="qsl-number m0">01</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="q-song">
+            <div class="qsl-number m0">02</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="q-song">
+            <div class="qsl-number m0">03</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <div class="q-song">
+            <div class="qsl-number m0">04</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="q-song">
+            <div class="qsl-number m0">05</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="q-song">
+            <div class="qsl-number m0">06</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="q-song">
+            <div class="qsl-number m0">07</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="q-song">
+            <div class="qsl-number m0">08</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="q-song">
+            <div class="qsl-number m0">09</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="q-song">
+            <div class="qsl-number m0">10</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="q-song">
+            <div class="qsl-number m0">11</div>
+            <div class="qsl-song m0">
+              <div class="qsl-song-img">
+                <img src="Assets/vidar-nordli-mathisen.jpg" alt="" />
+              </div>
+              <div class="qsl-song-name">
+                <h4 class="m0">Mirage</h4>
+                <p class="qsl-song-singer m0">Else</p>
+              </div>
+            </div>
+            <div class="qsl-icon m0">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer id="player">
+      <div class="player-container">
+        <div class="player-song">
+          <div class="ps-image">
+            <img src="Assets/Imagine.jpg" alt="" />
+          </div>
+          <div class="ps-song-name">
+            <h4 class="m0">IMAGINE</h4>
+            <p class="m0">John Lennon</p>
+          </div>
+          <div class="ps-song-icon">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-ban"></i>
+          </div>
+        </div>
+        <div class="playing-song">
+          <div class="playing-song-icon">
+            <i class="material-icons">shuffle</i>
+            <i class="material-icons">skip_previous</i>
+            <i class="material-icons">pause_circle_outline</i>
+            <i class="material-icons">skip_next</i>
+            <i class="material-icons">repeat</i>
+          </div>
+          <div class="playing-song-length">
+            <p>1:39</p>
+            <div class="playing-length"></div>
+            <div class="playing-time"></div>
+            <p>4:44</p>
+          </div>
+        </div>
+
+        <div class="player-right-icons">
+          <i class="material-icons">playlist_play</i>
+          <i class="material-icons">graphic_eq</i>
+          <i class="material-icons">volume_up</i>
+          <div class="right-playing-length"></div>
+          <div class="right-playing-time"></div>
+          <i class="material-icons">vertical_align_center</i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
